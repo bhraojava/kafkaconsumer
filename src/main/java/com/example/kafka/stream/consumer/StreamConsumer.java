@@ -48,7 +48,7 @@ public class StreamConsumer {
 		KStream<String, String> kStream = builder.stream(TOPIC);
 
 		kStream.foreach((key, value) -> {
-			logger.info("key ============   " + key);
+			// logger.info("key ============   " + key);
 			logger.info("value ============   " + value);
 			readValues(value);
 		});
